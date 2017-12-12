@@ -1,6 +1,10 @@
 # Ant_Tianchi_CCF_Positioning
 2017CCF大数据与计算智能大赛-蚂蚁金服-商铺定位赛题(全国第5名)
 
+### 赛题链接
+[商场中精确定位用户所在店铺](https://tianchi.aliyun.com/competition/introduction.htm?spm=5176.100068.5678.1.aa26a5emijaWb&raceId=231620)
+
+
 ### 文件说明
 * getFeatures.sql<br>为二分类部分预处理与得到特征中间文件处理，之后再在PAI平台上搭建组件让每个特征文件和构建的样本join起来，多分类部分由队友负责
 * wifiFingerprint.ipynb<br>为初赛的python版构建指纹库及计算指纹得分，复赛java实现在udtf中
