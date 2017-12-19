@@ -1,5 +1,5 @@
 # Ant_Tianchi_CCF_Positioning
-2017CCF大数据与计算智能大赛-蚂蚁金服-商铺定位赛题(全国第5名)
+2017CCF大数据与计算智能大赛-蚂蚁金服-商铺定位赛题(第5名)
 
 ### 赛题链接
 [商场中精确定位用户所在店铺](https://tianchi.aliyun.com/competition/introduction.htm?spm=5176.100068.5678.1.aa26a5emijaWb&raceId=231620)
