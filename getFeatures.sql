@@ -1122,11 +1122,11 @@ drop table if exists lzy_new_feat_wifi_p_loss_online_;
 --bssid在shop的强度中值rank
 drop table if exists lzy_new_feat_rank_inshop_offline;
 create table lzy_new_feat_rank_inshop_offline as 
-select mall_id,bssid,shop_id,rank() over(partition by shop_id order by bssid_median_rssi_inshop desc) as bssid_rank_inshop from lzy_new_shop_wifi_offlinewin where row_id in (select row_id from lzy_new_notnull_offline); 
+select mall_id,bssid,shop_id,rank() over(partition by shop_id order by bssid_median_rssi_inshop desc) as bssid_rank_inshop from lzy_new_shop_wifi_offlinewin; 
 
 drop table if exists lzy_new_feat_rank_inshop_online;
 create table lzy_new_feat_rank_inshop_online as 
-select mall_id,bssid,shop_id,rank() over(partition by shop_id order by bssid_median_rssi_inshop desc) as bssid_rank_inshop from lzy_new_shop_wifi_onlinewin where row_id in (select row_id from lzy_new_notnull_online); 
+select mall_id,bssid,shop_id,rank() over(partition by shop_id order by bssid_median_rssi_inshop desc) as bssid_rank_inshop from lzy_new_shop_wifi_onlinewin; 
 
 
 --店铺的rssi贡献率
